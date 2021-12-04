@@ -11,7 +11,7 @@ const
     http = require('http'),
     express = require('express'),
     app = express(),
-    port = process.env.PORT || config.port,
+    port = 5000,
     server = http.createServer(app);
 
 btoa = (str) => {
