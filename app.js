@@ -31,7 +31,7 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
-  window.onbeforeunload = function(){ return 'Leave page?'; };
+  window.onbeforeunload = function(){ return 'Teacher is trying to close your tab! If you don\'t this dont press anything \:) '; };
 
 const text404 = fs.readFileSync(path.normalize(__dirname + '/views/404.html'), 'utf8'),
     siteIndex = 'index.html',
