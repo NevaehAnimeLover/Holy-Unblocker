@@ -21,6 +21,17 @@ btoa = (str) => {
 atob = (str) => {
     return new Buffer.from(str, 'base64').toString('utf-8');
 }
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "400px";
+  document.getElementById("main").style.marginLeft = "400px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+  window.onbeforeunload = function(){ return 'Leave page?'; };
 
 const text404 = fs.readFileSync(path.normalize(__dirname + '/views/404.html'), 'utf8'),
     siteIndex = 'index.html',
